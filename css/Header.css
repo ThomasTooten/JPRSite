@@ -1,5 +1,7 @@
 header {
     background-color: red;
+    display: flex;
+    flex-wrap: nowrap;
 }
 nav ul li a {
     text-decoration: none;
@@ -7,6 +9,8 @@ nav ul li a {
 h1 {
     display: flex;
     justify-content: center;
+    size: 20px;
+    margin-left: 5%;
 }
 nav ul {
     display: flex;
