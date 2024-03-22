@@ -90,3 +90,6 @@
   main{
     z-index: 80;
   }
+  .hoofdletters{
+    text-transform: uppercase;
+  }
