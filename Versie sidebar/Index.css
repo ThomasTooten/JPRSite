@@ -32,11 +32,15 @@
 .sidebar .nav-links{
     height: 100%;
     padding-top: 30px;
-    background-color: red;
 }
+
 .sidebar .nav-links li{
     position: relative;
     list-style: none;
+    transition: all O.4s ease;
+}
+.sidebar .nav-links li:hover{
+    background: #1d1b31;
 }
 .sidebar .nav-links li .icon_link{
     display: flex;
@@ -61,6 +65,14 @@
     font-weight: 400;
     color: #fff;
 }
-.sub-menu{
-    padding: 6px, 6px, 14px, 80px;
+.sidebar .nav-links li .sub_menu {
+    padding: 6px 6px 14px 80px;
+    margin-top: -10px;
+    background: #1d1b31;
+    display: none;
+}
+.sidebar .nav-links li .sub_menu a{
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 0;
 }
