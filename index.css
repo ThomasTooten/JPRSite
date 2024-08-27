@@ -90,3 +90,14 @@
   main{
     z-index: 80;
   }
+  .link {
+    text-decoration: none; display: inline-block; text-align: center; padding: 10px; border: 1px solid #ccc; border-radius: 8px;
+}
+
+#links-container {
+    align-content: center;          
+    align-items: center; /* probeer ook flex-start, flex-end... */         
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
