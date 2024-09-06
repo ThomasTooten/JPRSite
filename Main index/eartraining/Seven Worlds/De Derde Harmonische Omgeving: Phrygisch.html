@@ -107,6 +107,66 @@
         .lesson-block:nth-child(6) {
             background-color: #f2f0d6; /* Zacht beige */
         }
+        /* Responsive layout voor schermen kleiner dan 768px (mobiele telefoons) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px; /* Verklein de header titel */
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 16px; /* Verklein de navigatie tekst */
+    }
+
+    main {
+        padding: 15px; /* Iets minder padding voor het main gedeelte */
+    }
+
+    section h2 {
+        font-size: 28px; /* Verklein de sectietitel */
+    }
+
+    .lesson-block {
+        padding: 15px; /* Iets minder padding in de lesblokken */
+        margin-bottom: 20px;
+    }
+
+    .lesson-block p {
+        font-size: 16px; /* Verklein de tekst in de lesblokken */
+    }
+
+    .lesson-block audio {
+        width: 100%; /* Zorg ervoor dat de audioplayer zich uitstrekt over de volledige breedte */
+    }
+}
+
+/* Responsive layout voor schermen kleiner dan 480px (kleinere mobiele telefoons) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px; /* Nog kleiner voor zeer kleine schermen */
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 14px; /* Nog kleiner voor navigatie tekst */
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 24px; /* Verklein de sectietitel verder */
+    }
+
+    .lesson-block {
+        padding: 10px;
+    }
+
+    .lesson-block p {
+        font-size: 14px; /* Verklein de tekst verder in de lesblokken */
+    }
+}
     </style>
 </head>
 <body>
