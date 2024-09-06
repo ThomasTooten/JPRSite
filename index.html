@@ -4,34 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jpr Cursus</title>
-    <link rel="stylesheet body" href="css/indexB.css">
-    <script src="index.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /*achtergrond kleur*/
+            background-color: #ecf0f1;
+            /*globaal font*/
+            font-family: helvetica, arial, sans-serif;
+            font-size: 16px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Verticaal centreren */
+            align-items: center; /* Horizontaal centreren */
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            margin-bottom: 30px; /* Ruimte tussen de header en de content */
+        }
+
+        header h1 {
+            font-size: 48px; /* Grotere tekst voor de titel */
+            color: #3498db;
+            text-transform: uppercase;
+            margin-bottom: 20px; /* Extra ruimte onder de titel */
+        }
+
+        nav {
+            margin-top: 10px;
+            margin-bottom: 40px; /* Meer ruimte onder de navigatiebalk */
+        }
+
+        nav a {
+            margin: 0 15px; /* Grotere marge tussen de navigatielinks */
+            color: #fff;
+            background-color: #3498db;
+            padding: 10px 20px; /* Grotere padding voor de links */
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px; /* Iets grotere tekst voor de links */
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hoofdletters p {
+            font-size: 24px;
+            font-style: italic;
+            color: #2c3e50;
+            margin-bottom: 20px; /* Ruimte tussen de regels */
+        }
+
+        .hoofdletters p:last-child {
+            font-weight: bold;
+            color: #7f8c8d;
+        }
+    </style>
 </head>
 <body>
-    <Header>
+    <header>
         <h1>Improvise For Real</h1>
         <nav>
-                <a href="Main index/eartraining/index.html">Ear Training</a>
-                <a href="Main index/Blues Training/index.html">Blues Training</a>
-                <a href="https://integerbook.herokuapp.com">Leadsheets IFR</a>
+            <a href="Main index/eartraining/index.html">Ear Training</a>
+            <a href="Main index/Blues Training/index.html">Blues Training</a>
+            <a href="https://integerbook.herokuapp.com">Leadsheets IFR</a>
         </nav>
-    </Header>
+    </header>
     <div class="wrapper">
         <main>
             <section>
-                <div class= "hoofdletters">
-                    <p>
-                        Tell me and i forget.
-                    </p>
-                    <p>
-                        Teach me and i may remember.
-                    </p>
-                    <p>
-                        Involve me and i learn.
-                    </p>
-                    <p>
-                        (Benjamin Franklin)
-                    </p>
+                <div class="hoofdletters">
+                    <p>Tell me and I forget.</p>
+                    <p>Teach me and I may remember.</p>
+                    <p>Involve me and I learn.</p>
+                    <p>(Benjamin Franklin)</p>
                 </div>
             </section>  
         </main>

@@ -4,54 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tonal Map Index</title>
-    <link rel="stylesheet body" href="https://thomastooten.github.io/JPRSite/index.css">
-    <script src="https://thomastooten.github.io/JPRSite/index.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #ecf0f1;
+            font-family: helvetica, arial, sans-serif;
+            font-size: 16px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Content begint vanaf de bovenkant */
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            color: #3498db;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #3498db; /* Geen achtergrondkleur, alleen de tekst */
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500; /* Minder opvallend dan bold */
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Lichte onderstreping bij hover */
+        }
+
+        main {
+            margin-top: 10px;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        #links-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        .link img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            height: 200px; /* Gelijkmatige hoogte voor de afbeeldingen */
+            width: 150px;
+        }
+
+        .link span {
+            display: block;
+            margin-top: 15px;
+            font-size: 18px;
+            color: #7f8c8d;
+        }
+
+        .module-links a {
+            text-decoration: none;
+            color: #999;
+            font-size: 20px;
+            margin-top: 10px;
+            display: block;
+            text-align: center;
+        }
+
+        .module-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <Header>
+    <header>
         <h1>TONAL MAP</h1>
         <nav>
-                <a href="https://thomastooten.github.io/JPRSite/Main index/eartraining/index.html">Ear Training</a>
-                <a href="https://thomastooten.github.io/JPRSite/Main index/Blues Training/index.html">Blues Training</a>
-                <a href="https://integerbook.herokuapp.com">Leadsheets IRF</a>
+            <a href="https://thomastooten.github.io/JPRSite/Main index/eartraining/index.html">Ear Training</a>
+            <a href="https://thomastooten.github.io/JPRSite/Main index/Blues Training/index.html">Blues Training</a>
+            <a href="https://integerbook.herokuapp.com">Leadsheets IRF</a>
         </nav>
-    </Header>
+    </header>
     <main>
         <section>
-
-            <H2>Sing The Numbers</H2>
+            <h2>Sing The Numbers</h2>
         </section>
         <div id="links-container">
-
             <section>  
                 <a class="link" href="module 1.html">
-                   <img src="/Main index/eartraining/Afbeeldingen/TM Module 1.png" alt="Tonal Map" height="400" width="200" style="display: block; margin: 0 auto;">
-                   <span style="display: block; color: #999; font-size: 20px; margin-top: 10px;">     
-                    Module 1
-                </span>
+                   <img src="/Main index/eartraining/Afbeeldingen/TM Module 1.png" alt="Tonal Map">
+                   <span>Module 1</span>
                 </a>
             </section>
-            
-            
             <section>
-                
                 <a class="link" href="module 2.html">
-                    <img src="/Main index/eartraining/Afbeeldingen/TM Module 2.png" alt="Tonal Map" height="400" width="200" style="display: block; margin: 0 auto;">
-                    <span style="display: block; color: #999; font-size: 20px; margin-top: 10px;">     
-                        Module 2
-                    </span></a>
+                    <img src="/Main index/eartraining/Afbeeldingen/TM Module 2.png" alt="Tonal Map">
+                    <span>Module 2</span>
+                </a>
+            </section>
+        </div>
+
+        <div class="module-links">
+            <section>
+                <a href="module 3.html">Module 3</a>
             </section>
             <section>
-                
-                <a class="link" href="module 3.html"style="text-decoration: none; color: #999; font-size: 20px;" >Module 3</a>
+                <a href="module 4.html">Module 4</a>
             </section>
             <section>
-                
-                <a class="link" href="module 4.html" style="text-decoration: none; color: #999; font-size: 20px;">Module 4</a>
-            </section>
-            <section>
-                
-                <a class="link" href="module 5.html" style="text-decoration: none; color: #999; font-size: 20px;">Module 5</a>
+                <a href="module 5.html">Module 5</a>
             </section>
         </div>
     </main>
