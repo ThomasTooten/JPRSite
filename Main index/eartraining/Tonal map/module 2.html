@@ -4,40 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tonal Map Module 2</title>
-    <link rel="stylesheet body" href="https://thomastooten.github.io/JPRSite/index.css">
-    <script src="https://thomastooten.github.io/JPRSite/index.js"></script>
 
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ecf0f1;
+            font-family: helvetica, arial, sans-serif;
+            font-size: 16px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            color: #3498db;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .lesson-block {
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .lesson-block p {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .lesson-block audio {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Zachte, nieuwe kleuren voor elk lesblok */
+        .lesson-block:nth-child(1) {
+            background-color: #ffd1dc; /* Zacht roze */
+        }
+
+        .lesson-block:nth-child(2) {
+            background-color: #d1ffeb; /* Zacht mintgroen */
+        }
+
+        .lesson-block:nth-child(3) {
+            background-color: #e6d1ff; /* Zacht paars */
+        }
+
+        .lesson-block:nth-child(4) {
+            background-color: #ffe7b3; /* Zacht geel */
+        }
+    </style>
 </head>
 <body>
-    <Header>
+    <header>
         <h1>TONAL MAP</h1>
         <nav>
-                <a href="https://thomastooten.github.io/JPRSite/Main index/eartraining/index.html">Ear Training</a>
-                <a href="https://thomastooten.github.io/JPRSite/Main index/Blues Training/index.html">Blues Training</a>
-                <a href="https://integerbook.herokuapp.com">Leadsheets IRF</a>
+            <a href="https://thomastooten.github.io/JPRSite/Main index/eartraining/index.html">Ear Training</a>
+            <a href="https://thomastooten.github.io/JPRSite/Main index/Blues Training/index.html">Blues Training</a>
+            <a href="https://integerbook.herokuapp.com">Leadsheets IRF</a>
         </nav>
-    </Header>
+    </header>
     <main>
         <section>
-
             <h2>Module 2</h2>
         </section>
-            <p>
-            Les 6.  We zingen nu de noten 1, 3 en 5 
-        </p>
-        <audio controls controlslist="nodownload" src="Audio/Module 2/IFR_Stn1_6.mp3"></audio>
-        <p>
-            Les 7. We zingen nu de noten 1, 4 en 5  
-        </p>
-        <audio controls controlslist="nodownload" src="Audio/Module 2/IFR_Stn1_l7.mp3"></audio>
-        <p>
-            Les 8. We zingen nu de noten 1, 3, 4 en 5 
-        </p>
-        <audio controls controlslist="nodownload" src="Audio/Module 2/IFR_Stn1_8.mp3"></audio>
-        <p>
-            Les 9. We zingen nu de noten 1,2,3, 4 en 5  
-        </p>
-        <audio controls controlslist="nodownload" src="Audio/Module 2/IFR_Stn1_9.mp3"></audio>
+
+        <div class="lesson-block">
+            <p>Les 6. We zingen nu de noten 1, 3 en 5</p>
+            <audio controls controlslist="nodownload" src="Audio/Module 2/IFR_Stn1_6.mp3"></audio>
+        </div>
+
+        <div class="lesson-block">
+            <p>Les 7. We zingen nu de noten 1, 4 en 5</p>
+            <audio controls controlslist="nodownload" src="Audio/Module 2/IFR_Stn1_l7.mp3"></audio>
+        </div>
+
+        <div class="lesson-block">
+            <p>Les 8. We zingen nu de noten 1, 3, 4 en 5</p>
+            <audio controls controlslist="nodownload" src="Audio/Module 2/IFR_Stn1_8.mp3"></audio>
+        </div>
+
+        <div class="lesson-block">
+            <p>Les 9. We zingen nu de noten 1, 2, 3, 4 en 5</p>
+            <audio controls controlslist="nodownload" src="Audio/Module 2/IFR_Stn1_9.mp3"></audio>
+        </div>
     </main>
 </body>
 </html>
