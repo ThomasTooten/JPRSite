@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
         }
-
+        
         body {
             background-color: #ecf0f1;
             font-family: helvetica, arial, sans-serif;
@@ -96,15 +96,25 @@
             transition: transform 0.3s, box-shadow 0.3s;
             border-radius: 15px;
             overflow: hidden;
-            padding: 20px 40px;
-            background-color: white;
-            width: 220px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .link:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .link img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .link:hover img {
+            transform: scale(1.05);
         }
 
         .link span {
@@ -121,9 +131,9 @@
                 font-size: 36px;
             }
 
-            .link {
+            .link img {
                 width: 160px;
-                padding: 15px 30px;
+                height: 160px;
             }
 
             .link span {
@@ -136,9 +146,9 @@
                 font-size: 28px;
             }
 
-            .link {
+            .link img {
                 width: 120px;
-                padding: 10px 20px;
+                height: 120px;
             }
 
             .link span {
@@ -163,15 +173,43 @@
         <h2>Onderwerpen</h2>
     </section>
     <div id="links-container">
-        <a class="link" href="#"><span>Het Konnakol systeem</span></a>
-        <a class="link" href="#"><span>De Majeur Toonladder</span></a>
-        <a class="link" href="#"><span>Wat zijn letterbenamingen en letterakkoorden?</span></a>
-        <a class="link" href="#"><span>De Diatonische Majeur Reeks</span></a>
-        <a class="link" href="#"><span>De Pentatonische Toonladders</span></a>
-        <a class="link" href="#"><span>De diatonische majeur reeks</span></a>
-        <a class="link" href="#"><span>De relatieve mineur</span></a>
-        <a class="link" href="#"><span>De parallelle mineur</span></a>
-        <a class="link" href="#"><span>De diatonische mineur reeks</span></a>
+        <a class="link" href="https://thomastooten.github.io/JPRSite/Theory/Kannakol.html">
+            <img src="Afbeeldingen/Kannakol.jpg"> 
+            <span>Het Konnakol systeem</span>
+        </a>
+        <a class="link" href="#"> 
+            <img src="Afbeeldingen/Majeur.jpg"> 
+            <span>De Majeur Toonladder</span>
+        </a>
+        <a class="link" href="#">
+            <img src="Afbeeldingen/letter.jpg">
+            <span>Wat zijn letterbenamingen</span>
+            <span>en letterakkoorden?</span>
+
+        </a>
+        <a class="link" href="#">
+            <img src="Afbeeldingen/diatosche.jpg">
+            <span>De Diatonische Majeur Reeks</span>
+        </a>
+        <a class="link" href="#">
+            <img src="Afbeeldingen/pentatoische.jpg">
+            <span>De Pentatonische Toonladders</span>
+        </a>
+        <a class="link" href="#">
+            <img src="Afbeeldingen/diatosche.jpg" alt="">
+            <span>De diatonische majeur reeks</span>
+        </a>
+        <a class="link" href="#">
+            <img src="Afbeeldingen/relatieve.jpg">
+            <span>De relatieve mineur</span>
+        </a>
+        <a class="link" href="#">
+            <img src="Afbeeldingen/parallelle.jpg">
+            <span>De parallelle mineur</span>
+        </a>
+        <a class="link" href="#">
+            <img src="Afbeeldingen/diatosche.jpg">
+            <span>De diatonische mineur reeks</span></a>
     </div>
 </main>
 
