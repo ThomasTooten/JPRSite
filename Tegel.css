@@ -49,6 +49,9 @@ nav a:hover {
 main {
     margin-top: 10px;
 }
+#Tekst h3 {
+    padding: 80px; /* Voegt padding toe rond het h3 element binnen het Tekst-sectie */
+}
 
 /* Styling for H2 to make it stand out */
 section h2 {
