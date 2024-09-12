@@ -1,4 +1,4 @@
-
+<style>
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,14 +12,14 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Content begint nu vanaf de bovenkant */
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     margin: 0;
 }
 
 header {
-    margin-top: 20px; /* De header begint nu hoger, met minder marge boven de titel */
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -36,30 +36,49 @@ nav {
 
 nav a {
     margin: 0 15px;
-    color: #3498db; /* Geen achtergrondkleur meer, alleen de tekst */
+    color: #3498db;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500; /* Minder opvallend dan bold */
+    font-weight: 500;
 }
 
 nav a:hover {
-    text-decoration: underline; /* Alleen bij hover krijgt het een onderstreping */
+    text-decoration: underline;
 }
 
 main {
     margin-top: 10px;
 }
 
+/* Styling for H2 to make it stand out */
 section h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
+    font-size: 40px; /* Grotere tekst */
     font-weight: bold;
     color: #2c3e50;
+    margin-bottom: 30px;
+    letter-spacing: 2px; /* Meer ruimte tussen letters */
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #3498db; /* Kleur van de streep */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
 }
 
 #links-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
     margin-top: 20px;
 }
@@ -67,17 +86,67 @@ section h2 {
 .link {
     text-decoration: none;
     color: #2c3e50;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .link img {
     display: block;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 15px;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.link:hover img {
+    transform: scale(1.05);
 }
 
 .link span {
     display: block;
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 20px;
     color: #7f8c8d;
+    font-weight: bold;
 }
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    .link img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .link span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .link img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .link span {
+        font-size: 16px;
+    }
+}
+</style>
