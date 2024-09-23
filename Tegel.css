@@ -114,6 +114,10 @@ section h2::after {
     transform: scale(1.05);
 }
 
+section {
+    margin-bottom: 40px; /* Voeg afstand toe tussen sections */
+    padding: 20px; /* Eventuele binnenruimte voor de sections */
+}
 .link span {
     display: block;
     margin-top: 15px;
