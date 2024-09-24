@@ -4,8 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lessen 13 t.e.m. 16</title>
-    <link rel="stylesheet body" href="https://thomastooten.github.io/JPRSite/index.css">
-    <script src="https://thomastooten.github.io/JPRSite/index.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ecf0f1;
+            font-family: helvetica, arial, sans-serif;
+            font-size: 16px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            color: #3498db;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .lesson-block {
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .lesson-block p {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .lesson-block audio {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Zachte kleuren voor deze pagina */
+        .lesson-block:nth-child(2) {
+            background-color: #f2f2d6; /* Zacht geel */
+        }
+
+        .lesson-block:nth-child(3) {
+            background-color: #d6f2e2; /* Zacht groen */
+        }
+
+        .lesson-block:nth-child(4) {
+            background-color: #d6e7f2; /* Zacht blauw */
+        }
+
+        .lesson-block:nth-child(5) {
+            background-color: #f2d6e7; /* Zacht roze */
+        }
+
+        .lesson-block:nth-child(6) {
+            background-color: #f2f0d6; /* Zacht beige */
+        }
+        /* Responsive layout voor schermen kleiner dan 768px (mobiele telefoons) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px; /* Verklein de header titel */
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 16px; /* Verklein de navigatie tekst */
+    }
+
+    main {
+        padding: 15px; /* Iets minder padding voor het main gedeelte */
+    }
+
+    section h2 {
+        font-size: 28px; /* Verklein de sectietitel */
+    }
+
+    .lesson-block {
+        padding: 15px; /* Iets minder padding in de lesblokken */
+        margin-bottom: 20px;
+    }
+
+    .lesson-block p {
+        font-size: 16px; /* Verklein de tekst in de lesblokken */
+    }
+
+    .lesson-block audio {
+        width: 100%; /* Zorg ervoor dat de audioplayer zich uitstrekt over de volledige breedte */
+    }
+}
+
+/* Responsive layout voor schermen kleiner dan 480px (kleinere mobiele telefoons) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px; /* Nog kleiner voor zeer kleine schermen */
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 14px; /* Nog kleiner voor navigatie tekst */
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 24px; /* Verklein de sectietitel verder */
+    }
+
+    .lesson-block {
+        padding: 10px;
+    }
+
+    .lesson-block p {
+        font-size: 14px; /* Verklein de tekst verder in de lesblokken */
+    }
+}
+    </style>
 
 </head>
 <body>
@@ -22,22 +183,34 @@
 
             <h2>Lessen 13 t.e.m. 16</h2>
         </section>
-        <p>
-            Les 13: Akkoorden 2- en 6-
-        </p>
-        <audio controls controlslist="nodownload" src="Audio/Lessen 13 tem 16/IFR Sing the Numbers 3 - lesson 13 - chords 2-, 6-.mp3"></audio>
-        <p>
-            Les 14: Akkoorden 1, 6-, 2-, en 5D
-        </p>
-        <audio controls controlslist="nodownload" src="Audio/Lessen 13 tem 16/IFR Sing the Numbers 3 - lesson 14 - chords 1, 6-, 2-, 5D.mp3"></audio>
-        <p>
-            Les 15: Akkoorden 2- en 3-
-        </p>
-        <audio controls controlslist="nodownload" src="Audio/Lessen 13 tem 16/IFR Sing the Numbers 3 - lesson 15 - chords 2-, 3-.mp3"></audio>
-        <p>
-            Les 16: Akkoorden 6-, 2-, 3- en 6-
-        </p>
-        <audio controls controlslist="nodownload" src="Audio/Lessen 13 tem 16/IFR Sing the Numbers 3 - lesson 16 - chords 6-, 2-, 3-, 6-.mp3"></audio>
+        <div class="lesson-block">
+
+            <p>
+                Les 13: Akkoorden 2- en 6-
+            </p>
+            <audio controls controlslist="nodownload" src="Audio/Lessen 13 tem 16/IFR Sing the Numbers 3 - lesson 13 - chords 2-, 6-.mp3"></audio>
+        </div>
+        <div class="lesson-block">
+
+            <p>
+                Les 14: Akkoorden 1, 6-, 2-, en 5D
+            </p>
+            <audio controls controlslist="nodownload" src="Audio/Lessen 13 tem 16/IFR Sing the Numbers 3 - lesson 14 - chords 1, 6-, 2-, 5D.mp3"></audio>
+        </div>
+        <div class="lesson-block">
+
+            <p>
+                Les 15: Akkoorden 2- en 3-
+            </p>
+            <audio controls controlslist="nodownload" src="Audio/Lessen 13 tem 16/IFR Sing the Numbers 3 - lesson 15 - chords 2-, 3-.mp3"></audio>
+        </div>
+        <div class="lesson-block">
+
+            <p>
+                Les 16: Akkoorden 6-, 2-, 3- en 6-
+            </p>
+            <audio controls controlslist="nodownload" src="Audio/Lessen 13 tem 16/IFR Sing the Numbers 3 - lesson 16 - chords 6-, 2-, 3-, 6-.mp3"></audio>
+        </div>
         
     </main>
 </body>

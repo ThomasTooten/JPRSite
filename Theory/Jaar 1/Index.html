@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inhoudsopgave</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #ecf0f1;
+            font-family: helvetica, arial, sans-serif;
+            font-size: 16px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            color: #3498db;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin-top: 10px;
+        }
+
+        /* Styling for H2 to make it stand out */
+        section h2 {
+            font-size: 40px; /* Grotere tekst */
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            letter-spacing: 2px; /* Meer ruimte tussen letters */
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        section h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: #3498db; /* Kleur van de streep */
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        #links-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #2c3e50;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .link img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .link:hover img {
+            transform: scale(1.05);
+        }
+
+        .link span {
+            display: block;
+            margin-top: 15px;
+            font-size: 20px;
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            .link img {
+                width: 160px;
+                height: 160px;
+            }
+
+            .link span {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .link img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .link span {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Theory</h1>
+    <nav>
+        <a href="https://thomastooten.github.io/JPRSite/Main index/eartraining/index.html">Ear Training</a>
+        <a href="https://thomastooten.github.io/JPRSite/Main index/Blues Training/index.html">Blues Training</a>
+        <a href="https://integerbook.herokuapp.com">Leadsheets IRF</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Hoofdstukken</h2>
+    </section>
+    <div id="links-container">
+        <a class="link" href="#">
+            <img src="Afbeeldingen/toonladder.jpg" alt="Toonladders">
+            <span>Toonladders</span>
+        </a>
+        <a class="link" href="#">
+            <img src="Afbeeldingen/Akkoorden.jpg" alt="Akkoorden">
+            <span>Akkoorden</span>
+        </a>
+        <a class="link" href="#">
+            <img src="Afbeeldingen/Geschiedenis.jpg" alt="Geschiedenis">
+            <span>Geschiedenis</span>
+        </a>
+        <a class="link" href="#">
+            <img src="Afbeeldingen/Blues.jpg" alt="Blues">
+            <span>Blues</span>
+        </a>
+        <a class="link" href="#">
+            <img src="Afbeeldingen/Jazz.jpg" alt="Jazz">
+            <span>Jazz</span>
+        </a>
+    </div>
+</main>
+
+</body>
+</html>
