@@ -81,67 +81,67 @@ section h2 {
 }
 
 /* Zachte kleuren voor elk lesblok */
-.lesson-block:nth-child(1) {
+.lesson-block:nth-child(2) {
     background-color: #ffebee; /* Pastel rood */
 }
 
-.lesson-block:nth-child(2) {
+.lesson-block:nth-child(3) {
     background-color: #e8f5e9; /* Pastel groen */
 }
 
-.lesson-block:nth-child(3) {
+.lesson-block:nth-child(4) {
     background-color: #fff3e0; /* Pastel oranje */
 }
 
-.lesson-block:nth-child(4) {
+.lesson-block:nth-child(5) {
     background-color: #f3e5f5; /* Pastel paars */
 }
 
-.lesson-block:nth-child(5) {
+.lesson-block:nth-child(6) {
     background-color: #e0f7fa; /* Pastel blauw */
 }
 
-.lesson-block:nth-child(6) {
+.lesson-block:nth-child(7) {
     background-color: #fce4ec; /* Pastel roze */
 }
 
-.lesson-block:nth-child(7) {
+.lesson-block:nth-child(8) {
     background-color: #f9fbe7; /* Pastel geel */
 }
 
-.lesson-block:nth-child(8) {
+.lesson-block:nth-child(9) {
     background-color: #ede7f6; /* Lichte lavendel */
 }
 
-.lesson-block:nth-child(9) {
+.lesson-block:nth-child(10) {
     background-color: #e1f5fe; /* Pastel blauw */
 }
 
-.lesson-block:nth-child(10) {
+.lesson-block:nth-child(11) {
     background-color: #f1f8e9; /* Pastel lime */
 }
 
-.lesson-block:nth-child(11) {
+.lesson-block:nth-child(12) {
     background-color: #f3e2a9; /* Pastel zand */
 }
 
-.lesson-block:nth-child(12) {
+.lesson-block:nth-child(13) {
     background-color: #ffecb3; /* Pastel goud */
 }
 
-.lesson-block:nth-child(13) {
+.lesson-block:nth-child(14) {
     background-color: #e6ee9c; /* Pastel groen */
 }
 
-.lesson-block:nth-child(14) {
+.lesson-block:nth-child(15) {
     background-color: #d1c4e9; /* Pastel lavendel paars */
 }
 
-.lesson-block:nth-child(15) {
+.lesson-block:nth-child(16) {
     background-color: #b2dfdb; /* Pastel mintgroen */
 }
 
-.lesson-block:nth-child(16) {
+.lesson-block:nth-child(1) {
     background-color: #ffe0b2; /* Pastel perzik */
 }
 
