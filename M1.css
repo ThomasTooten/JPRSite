@@ -100,6 +100,27 @@ section h2 {
 .lesson-block:nth-child(5) {
     background-color: #f3e8fd; /* Zachte paars */
 }
+.lesson-block:nth-child(7) {
+    background-color: #467e4f; /* Zachte paars */
+}.lesson-block:nth-child(8) {
+    background-color: #c5a060; /* Zachte paars */
+}.lesson-block:nth-child(9) {
+    background-color: #c05f7c; /* Zachte paars */
+}.lesson-block:nth-child(10) {
+    background-color: #6a1212; /* Zachte paars */
+}.lesson-block:nth-child(11) {
+    background-color: #41255c; /* Zachte paars */
+}.lesson-block:nth-child(12) {
+    background-color: #6992df; /* Zachte paars */
+}.lesson-block:nth-child(13) {
+    background-color: #f3e8fd; /* Zachte paars */
+}.lesson-block:nth-child(14) {
+    background-color: #f3e8fd; /* Zachte paars */
+}.lesson-block:nth-child(15) {
+    background-color: #f3e8fd; /* Zachte paars */
+}.lesson-block:nth-child(16) {
+    background-color: #f3e8fd; /* Zachte paars */
+}
 /* Responsive layout voor schermen kleiner dan 768px (mobiele telefoons) */
 @media (max-width: 768px) {
 header h1 {
