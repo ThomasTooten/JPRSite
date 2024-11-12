@@ -102,24 +102,41 @@ section h2 {
 }
 .lesson-block:nth-child(7) {
     background-color: #467e4f; /* Zachte paars */
-}.lesson-block:nth-child(8) {
-    background-color: #c5a060; /* Zachte paars */
-}.lesson-block:nth-child(9) {
-    background-color: #c05f7c; /* Zachte paars */
-}.lesson-block:nth-child(10) {
-    background-color: #6a1212; /* Zachte paars */
-}.lesson-block:nth-child(11) {
-    background-color: #41255c; /* Zachte paars */
-}.lesson-block:nth-child(12) {
-    background-color: #6992df; /* Zachte paars */
-}.lesson-block:nth-child(13) {
-    background-color: #146735; /* Zachte paars */
-}.lesson-block:nth-child(14) {
-    background-color: #64c3c9; /* Zachte paars */
-}.lesson-block:nth-child(15) {
-    background-color: #9bce55; /* Zachte paars */
-}.lesson-block:nth-child(16) {
-    background-color: #ec9f68; /* Zachte paars */
+}
+.lesson-block:nth-child(8) {
+    background-color: #e1d0b0; /* Lichte bruin */
+}
+
+.lesson-block:nth-child(9) {
+    background-color: #e3b3c1; /* Lichte roze */
+}
+
+.lesson-block:nth-child(10) {
+    background-color: #d88c8c; /* Lichte rood-bruin */
+}
+
+.lesson-block:nth-child(11) {
+    background-color: #725b8a; /* Lichte paars */
+}
+
+.lesson-block:nth-child(12) {
+    background-color: #a3bced; /* Lichte blauw */
+}
+
+.lesson-block:nth-child(13) {
+    background-color: #7ab98f; /* Lichte groen */
+}
+
+.lesson-block:nth-child(14) {
+    background-color: #a7dee2; /* Lichte turkoois */
+}
+
+.lesson-block:nth-child(15) {
+    background-color: #c1e7a7; /* Lichte groen-geel */
+}
+
+.lesson-block:nth-child(16) {
+    background-color: #f2c2a4; /* Lichte oranje */
 }
 /* Responsive layout voor schermen kleiner dan 768px (mobiele telefoons) */
 @media (max-width: 768px) {
