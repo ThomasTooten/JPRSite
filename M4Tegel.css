@@ -17,13 +17,25 @@ body {
 header {
     margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 header h1 {
     font-size: 48px;
     color: #3498db;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin: 0;
+    white-space: nowrap; /* Zorgt ervoor dat de tekst niet afbreekt */
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
 }
 
 nav {
