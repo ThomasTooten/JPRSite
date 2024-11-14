@@ -146,6 +146,12 @@ section h2 {
 .lesson-block:nth-child(16) {
     background-color: #b2dfdb; /* Pastel mintgroen */
 }
+.lesson-block:nth-child(17) {
+    background-color: #dfb2d6; /* Pastel mintgroen */
+}
+.lesson-block:nth-child(18) {
+    background-color: #dfd7b2; /* Pastel mintgroen */
+}
 
 .lesson-block:nth-child(1) {
     background-color: #ffe0b2; /* Pastel perzik */
