@@ -79,6 +79,10 @@ section h2 {
     display: block;
     margin: 0 auto;
 }
+.lesson-block img {
+    display: block;
+    margin: 0 auto;
+}
 
 /* Zachte kleuren voor elk lesblok */
 .lesson-block:nth-child(2) {
