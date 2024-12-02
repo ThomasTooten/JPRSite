@@ -6,107 +6,173 @@
     <title>Ear Training</title>
     <style>
         * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-body {
-    background-color: #ecf0f1;
-    font-family: helvetica, arial, sans-serif;
-    font-size: 16px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-}
+        body {
+            background-color: #ecf0f1;
+            font-family: helvetica, arial, sans-serif;
+            font-size: 16px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
 
-header {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+        header {
+            margin: 20px 0;
+        }
 
-header h1 {
-    font-size: 48px;
-    color: #3498db;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
+        header h1 {
+            font-size: 48px;
+            color: #3498db;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
 
-nav {
-    margin-bottom: 40px;
-}
+        nav {
+            margin-bottom: 40px;
+        }
 
-nav a {
-    margin: 0 15px;
-    color: #3498db;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-}
+        nav a {
+            margin: 0 15px;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
 
-nav a:hover {
-    text-decoration: underline;
-}
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-main {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: calc(100vh - 120px); /* Houd rekening met header en eventuele margins */
-}
+        main {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
+        section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
 
-section h2 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 10px;
-}
+        section h2 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
 
-section h2::after {
-    content: '';
-    width: 80px;
-    height: 4px;
-    background-color: #3498db;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
-}
+        section h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: #3498db;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
 
-iframe {
-    width: 100%;
-    height: 100%;
+        #links-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #2c3e50;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 220px;
+        }
+
+        .link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .link img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .link:hover img {
+            transform: scale(1.05);
+        }
+
+        .link span {
+            display: block;
+            margin-top: 15px;
+            font-size: 20px;
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+
+        iframe {
+    width: 300%; /* Maak de iframe drie keer zo breed */
+    height: 80vh; /* Dynamische hoogte gebaseerd op de viewport */
     border: none;
+    overflow: hidden; /* Geen scrollbars */
+    display: block;
+    position: relative;
+    left: -100%; /* Verplaats naar links om het te centreren */
+    margin: 0 auto; /* Zorg ervoor dat het gecentreerd blijft */
 }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
 
-@media (min-width: 768px) {
-    iframe {
-        width: 80%;
-        height: 90%;
-    }
-}
+            .link img {
+                width: 100%;
+                height: 160px;
+            }
+
+            .link span {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .link img {
+                width: 100%;
+                height: 120px;
+            }
+
+            .link span {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -121,10 +187,25 @@ iframe {
 
     <main>
         <section>
+            <h2>Sing The Numbers</h2>
+        </section>
+        <div id="links-container">
+            <a class="link" href="M1.html">
+                <img src="Afbeeldingen/M1.webp" alt="Module 1">
+                <span>Module 1</span>
+            </a>
+            <a class="link" href="M2.html">
+                <img src="Afbeeldingen/M2.webp" alt="Module 2">
+                <span>Module 2</span>
+            </a>
+            <a class="link" href="M3.html">
+                <img src="Afbeeldingen/M3.webp" alt="Module 3">
+                <span>Module 3</span>
+            </a>
+        </div>
+        <section>
             <h2>PDF Viewer</h2>
-            <iframe 
-                src="IFR Jam Tracks Level 1 - Seven Worlds - 1st harmonic environment.pdf">
-            </iframe>
+            <iframe src="IFR Jam Tracks Level 1 - Seven Worlds - 1st harmonic environment.pdf"></iframe>
         </section>
     </main>
 </body>
