@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -70,6 +69,15 @@ section h2 {
     padding-bottom: 10px;
 }
 
+section h2 a {
+    color: inherit; /* Erf de kleur van de <h2> */
+    text-decoration: none; /* Verwijder onderstreping */
+}
+
+section h2 a:hover {
+    text-decoration: none; /* Zorg ervoor dat er bij hover ook geen onderstreping is */
+}
+
 section h2::after {
     content: '';
     width: 80px;
@@ -129,15 +137,16 @@ section h2::after {
 }
 
 iframe {
-width: 300%; /* Maak de iframe drie keer zo breed */
-height: 80vh; /* Dynamische hoogte gebaseerd op de viewport */
-border: none;
-overflow: hidden; /* Geen scrollbars */
-display: block;
-position: relative;
-left: -100%; /* Verplaats naar links om het te centreren */
-margin: 0 auto; /* Zorg ervoor dat het gecentreerd blijft */
+    width: 300%; /* Maak de iframe drie keer zo breed */
+    height: 80vh; /* Dynamische hoogte gebaseerd op de viewport */
+    border: none;
+    overflow: hidden; /* Geen scrollbars */
+    display: block;
+    position: relative;
+    left: -100%; /* Verplaats naar links om het te centreren */
+    margin: 0 auto; /* Zorg ervoor dat het gecentreerd blijft */
 }
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 36px;
