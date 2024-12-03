@@ -18,7 +18,7 @@
 
     <main>
         <section>
-            <h2> <a href="https://thomastooten.github.io/JPRSite/Main index/eartraining//Jam Tracks/Seven Worlds/index.html">Seven Worlds</a></h2>
+            <h2><a href="https://thomastooten.github.io/JPRSite/Main index/eartraining//Jam Tracks/Seven Worlds/index.html">Seven Worlds</a></h2>
         </section>
         <section>
             <h2>2nd harmonic environment</h2>
@@ -38,9 +38,44 @@
             </a>
         </div>
         <section>
-            <h2></h2>
-            <iframe src="IFR Jam Tracks Level 1 - Seven Worlds - 2nd harmonic environment.pdf"></iframe>
+            <h2>PDF Viewer</h2>
+            <div id="pdf-viewer"></div>
         </section>
     </main>
+
+    <!-- PDF.js Library -->
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+
+    <script>
+        const url = 'https://thomastooten.github.io/JPRSite/Main%20index/eartraining/Jam%20Tracks/Seven%20Worlds/IFR%20Jam%20Tracks%20Level%201%20-%20Seven%20Worlds%20-%202nd%20harmonic%20environment.pdf';
+        const pdfjsLib = window['pdfjs-dist/build/pdf'];
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
+
+        // Laden van de PDF
+        const loadingTask = pdfjsLib.getDocument(url);
+        loadingTask.promise.then((pdf) => {
+            // Eerste pagina ophalen
+            pdf.getPage(1).then((page) => {
+                const scale = 1.5; // Schaal van de PDF
+                const viewport = page.getViewport({ scale });
+
+                // Canvas voor weergave
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+                document.getElementById('pdf-viewer').appendChild(canvas);
+
+                // Render de PDF-pagina
+                const renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+                page.render(renderContext);
+            });
+        }).catch((error) => {
+            console.error('Error loading PDF:', error);
+        });
+    </script>
 </body>
 </html>
