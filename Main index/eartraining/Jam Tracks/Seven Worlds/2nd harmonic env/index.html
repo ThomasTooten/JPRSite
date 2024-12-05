@@ -44,38 +44,39 @@
     </main>
 
     <!-- PDF.js Library -->
-    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 
-    <script>
-        const url = 'https://thomastooten.github.io/JPRSite/Main%20index/eartraining/Jam%20Tracks/Seven%20Worlds/IFR%20Jam%20Tracks%20Level%201%20-%20Seven%20Worlds%20-%202nd%20harmonic%20environment.pdf';
-        const pdfjsLib = window['pdfjs-dist/build/pdf'];
-        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
-
-        // Laden van de PDF
-        const loadingTask = pdfjsLib.getDocument(url);
-        loadingTask.promise.then((pdf) => {
-            // Eerste pagina ophalen
-            pdf.getPage(1).then((page) => {
-                const scale = 1.5; // Schaal van de PDF
-                const viewport = page.getViewport({ scale });
-
-                // Canvas voor weergave
-                const canvas = document.createElement('canvas');
-                const context = canvas.getContext('2d');
-                canvas.height = viewport.height;
-                canvas.width = viewport.width;
-                document.getElementById('pdf-viewer').appendChild(canvas);
-
-                // Render de PDF-pagina
-                const renderContext = {
-                    canvasContext: context,
-                    viewport: viewport
-                };
-                page.render(renderContext);
+        <div id="pdf-viewer"></div>
+        <script>
+            const url = 'https://thomastooten.github.io/JPRSite/Main%20index/eartraining/Jam%20Tracks/Seven%20Worlds/IFR%20Jam%20Tracks%20Level%201%20-%20Seven%20Worlds%20-%202nd%20harmonic%20environment.pdf';
+            const pdfjsLib = window['pdfjs-dist/build/pdf'];
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.16.105/build/pdf.worker.min.js';
+    
+            // Laden van de PDF
+            const loadingTask = pdfjsLib.getDocument(url);
+            loadingTask.promise.then((pdf) => {
+                // Eerste pagina ophalen
+                pdf.getPage(1).then((page) => {
+                    const scale = 1.5; // Schaal van de PDF
+                    const viewport = page.getViewport({ scale });
+    
+                    // Canvas voor weergave
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+                    document.getElementById('pdf-viewer').appendChild(canvas);
+    
+                    // Render de PDF-pagina
+                    const renderContext = {
+                        canvasContext: context,
+                        viewport: viewport
+                    };
+                    page.render(renderContext);
+                });
+            }).catch((error) => {
+                console.error('Error loading PDF:', error);
             });
-        }).catch((error) => {
-            console.error('Error loading PDF:', error);
-        });
-    </script>
+        </script>
+
 </body>
 </html>
