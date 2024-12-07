@@ -114,8 +114,13 @@ header h1 {
     color: #3498db;
     text-transform: uppercase;
     margin-bottom: 20px;
+ 
+}
+a {
+
     text-decoration: none;
 }
+text-decoration: none;
 header h1:hover{
     text-decoration: underline;
 }
@@ -293,4 +298,63 @@ padding: 10px;
 font-size: 14px; /* Verklein de tekst verder in de lesblokken */
 }
 }
-
+.lesson-block:nth-child(1) {
+    background-color: #0000FF; /* Stap 1 */
+}
+.lesson-block:nth-child(2) {
+    background-color: #0014F2; /* Stap 2 */
+}
+.lesson-block:nth-child(3) {
+    background-color: #0029E6; /* Stap 3 */
+}
+.lesson-block:nth-child(4) {
+    background-color: #003DDA; /* Stap 4 */
+}
+.lesson-block:nth-child(5) {
+    background-color: #0052CD; /* Stap 5 */
+}
+.lesson-block:nth-child(6) {
+    background-color: #0066C1; /* Stap 6 */
+}
+.lesson-block:nth-child(7) {
+    background-color: #007AB5; /* Stap 7 */
+}
+.lesson-block:nth-child(8) {
+    background-color: #008FA9; /* Stap 8 */
+}
+.lesson-block:nth-child(9) {
+    background-color: #00A39C; /* Stap 9 */
+}
+.lesson-block:nth-child(10) {
+    background-color: #00B890; /* Stap 10 */
+}
+.lesson-block:nth-child(11) {
+    background-color: #00CC84; /* Stap 11 */
+}
+.lesson-block:nth-child(12) {
+    background-color: #00E178; /* Stap 12 */
+}
+.lesson-block:nth-child(13) {
+    background-color: #00F56B; /* Stap 13 */
+}
+.lesson-block:nth-child(14) {
+    background-color: #0FF65F; /* Stap 14 */
+}
+.lesson-block:nth-child(15) {
+    background-color: #33F753; /* Stap 15 */
+}
+.lesson-block:nth-child(16) {
+    background-color: #4CF847; /* Stap 16 */
+}
+.lesson-block:nth-child(17) {
+    background-color: #66F93A; /* Stap 17 */
+}
+.lesson-block:nth-child(18) {
+    background-color: #7FFA2E; /* Stap 18 */
+}
+.lesson-block:nth-child(19) {
+    background-color: #99FB22; /* Stap 19 */
+}
+.lesson-block:nth-child(20) {
+    background-color: #00FF00; /* Stap 20 */
+}
