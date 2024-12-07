@@ -84,64 +84,7 @@ section h2 {
     margin: 0 auto;
 }
 
-/* Zachte kleuren voor elk lesblok */
-.lesson-block:nth-child(6) {
-    background-color: #f0f9ff; /* Zachte blauw */
-}
 
-.lesson-block:nth-child(2) {
-    background-color: #e8fce9; /* Zachte groen */
-}
-
-.lesson-block:nth-child(3) {
-    background-color: #fff4e6; /* Zachte oranje */
-}
-
-.lesson-block:nth-child(4) {
-    background-color: #fde2e4; /* Zachte roze */
-}
-
-.lesson-block:nth-child(5) {
-    background-color: #f3e8fd; /* Zachte paars */
-}
-.lesson-block:nth-child(7) {
-    background-color: #467e4f; /* Zachte paars */
-}
-.lesson-block:nth-child(8) {
-    background-color: #e1d0b0; /* Lichte bruin */
-}
-
-.lesson-block:nth-child(9) {
-    background-color: #e3b3c1; /* Lichte roze */
-}
-
-.lesson-block:nth-child(10) {
-    background-color: #d88c8c; /* Lichte rood-bruin */
-}
-
-.lesson-block:nth-child(11) {
-    background-color: #725b8a; /* Lichte paars */
-}
-
-.lesson-block:nth-child(12) {
-    background-color: #a3bced; /* Lichte blauw */
-}
-
-.lesson-block:nth-child(13) {
-    background-color: #7ab98f; /* Lichte groen */
-}
-
-.lesson-block:nth-child(14) {
-    background-color: #a7dee2; /* Lichte turkoois */
-}
-
-.lesson-block:nth-child(15) {
-    background-color: #c1e7a7; /* Lichte groen-geel */
-}
-
-.lesson-block:nth-child(16) {
-    background-color: #f2c2a4; /* Lichte oranje */
-}
 /* Responsive layout voor schermen kleiner dan 768px (mobiele telefoons) */
 @media (max-width: 768px) {
 header h1 {

@@ -84,64 +84,155 @@ section h2 {
     margin: 0 auto;
 }
 
-/* Zachte kleuren voor elk lesblok */
-.lesson-block:nth-child(6) {
-    background-color: #f0f9ff; /* Zachte blauw */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.lesson-block:nth-child(2) {
-    background-color: #e8fce9; /* Zachte groen */
+body {
+    background-color: #ecf0f1;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 0;
 }
 
-.lesson-block:nth-child(3) {
-    background-color: #fff4e6; /* Zachte oranje */
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.lesson-block:nth-child(4) {
-    background-color: #fde2e4; /* Zachte roze */
+header h1 {
+    font-size: 48px;
+    color: #3498db;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+header h1:hover{
+    text-decoration: underline;
 }
 
-.lesson-block:nth-child(5) {
-    background-color: #f3e8fd; /* Zachte paars */
-}
-.lesson-block:nth-child(7) {
-    background-color: #467e4f; /* Zachte paars */
-}
-.lesson-block:nth-child(8) {
-    background-color: #e1d0b0; /* Lichte bruin */
+nav {
+    margin-bottom: 40px;
 }
 
-.lesson-block:nth-child(9) {
-    background-color: #e3b3c1; /* Lichte roze */
+nav a {
+    margin: 0 15px;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-.lesson-block:nth-child(10) {
-    background-color: #d88c8c; /* Lichte rood-bruin */
+nav a:hover {
+    text-decoration: underline;
 }
 
-.lesson-block:nth-child(11) {
-    background-color: #725b8a; /* Lichte paars */
+main {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.lesson-block:nth-child(12) {
-    background-color: #a3bced; /* Lichte blauw */
+section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #2c3e50;
 }
 
-.lesson-block:nth-child(13) {
-    background-color: #7ab98f; /* Lichte groen */
+.lesson-block {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.lesson-block:nth-child(14) {
-    background-color: #a7dee2; /* Lichte turkoois */
+.lesson-block p {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 20px;
 }
 
-.lesson-block:nth-child(15) {
-    background-color: #c1e7a7; /* Lichte groen-geel */
+.lesson-block audio {
+    display: block;
+    margin: 0 auto;
 }
 
-.lesson-block:nth-child(16) {
-    background-color: #f2c2a4; /* Lichte oranje */
+
+/* Responsive layout voor schermen kleiner dan 768px (mobiele telefoons) */
+@media (max-width: 768px) {
+header h1 {
+font-size: 36px; /* Verklein de header titel */
 }
+
+nav a {
+margin: 0 10px;
+font-size: 16px; /* Verklein de navigatie tekst */
+}
+
+main {
+padding: 15px; /* Iets minder padding voor het main gedeelte */
+}
+
+section h2 {
+font-size: 28px; /* Verklein de sectietitel */
+}
+
+.lesson-block {
+padding: 15px; /* Iets minder padding in de lesblokken */
+margin-bottom: 20px;
+}
+
+.lesson-block p {
+font-size: 16px; /* Verklein de tekst in de lesblokken */
+}
+
+.lesson-block audio {
+width: 100%; /* Zorg ervoor dat de audioplayer zich uitstrekt over de volledige breedte */
+}
+}
+
+/* Responsive layout voor schermen kleiner dan 480px (kleinere mobiele telefoons) */
+@media (max-width: 480px) {
+header h1 {
+font-size: 28px; /* Nog kleiner voor zeer kleine schermen */
+}
+
+nav a {
+margin: 0 5px;
+font-size: 14px; /* Nog kleiner voor navigatie tekst */
+}
+
+main {
+padding: 10px;
+}
+
+section h2 {
+font-size: 24px; /* Verklein de sectietitel verder */
+}
+
+.lesson-block {
+padding: 10px;
+}
+
+.lesson-block p {
+font-size: 14px; /* Verklein de tekst verder in de lesblokken */
+}
+}
+
+
 /* Responsive layout voor schermen kleiner dan 768px (mobiele telefoons) */
 @media (max-width: 768px) {
 header h1 {
