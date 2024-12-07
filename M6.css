@@ -146,3 +146,63 @@ font-size: 14px; /* Verklein de tekst verder in de lesblokken */
 }
 }
 
+.lesson-block:nth-child(1) {
+    background-color: #FF0000; /* Stap 1: Rood */
+}
+.lesson-block:nth-child(2) {
+    background-color: #FF1100; /* Stap 2 */
+}
+.lesson-block:nth-child(3) {
+    background-color: #FF2200; /* Stap 3 */
+}
+.lesson-block:nth-child(4) {
+    background-color: #FF3300; /* Stap 4 */
+}
+.lesson-block:nth-child(5) {
+    background-color: #FF4400; /* Stap 5 */
+}
+.lesson-block:nth-child(6) {
+    background-color: #FF5500; /* Stap 6 */
+}
+.lesson-block:nth-child(7) {
+    background-color: #FF6600; /* Stap 7 */
+}
+.lesson-block:nth-child(8) {
+    background-color: #FF7700; /* Stap 8 */
+}
+.lesson-block:nth-child(9) {
+    background-color: #FF8800; /* Stap 9 */
+}
+.lesson-block:nth-child(10) {
+    background-color: #FF9900; /* Stap 10 */
+}
+.lesson-block:nth-child(11) {
+    background-color: #FFAA00; /* Stap 11 */
+}
+.lesson-block:nth-child(12) {
+    background-color: #FFBB00; /* Stap 12 */
+}
+.lesson-block:nth-child(13) {
+    background-color: #FFCC00; /* Stap 13 */
+}
+.lesson-block:nth-child(14) {
+    background-color: #FFDD00; /* Stap 14 */
+}
+.lesson-block:nth-child(15) {
+    background-color: #FFEE00; /* Stap 15 */
+}
+.lesson-block:nth-child(16) {
+    background-color: #FFF000; /* Stap 16 */
+}
+.lesson-block:nth-child(17) {
+    background-color: #FFF200; /* Stap 17 */
+}
+.lesson-block:nth-child(18) {
+    background-color: #FFF500; /* Stap 18 */
+}
+.lesson-block:nth-child(19) {
+    background-color: #FFF800; /* Stap 19 */
+}
+.lesson-block:nth-child(20) {
+    background-color: #FFFF00; /* Stap 20: Geel */
+}
