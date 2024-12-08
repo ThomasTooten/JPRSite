@@ -18,6 +18,10 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Zet elementen onder elkaar */
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -26,11 +30,12 @@ header h1 {
     font-size: 48px;
     color: #3498db;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin: 0; /* Verwijder extra ruimte */
     text-decoration: none;
+    line-height: 1.2; /* Zorg voor nette tekstuitlijning */
 }
 
-header h1:hover{
+header h1:hover {
     text-decoration: underline;
 }
 
@@ -60,24 +65,12 @@ main {
     margin-bottom: 20px;
 }
 
-
-.link {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: inherit;
-}
-
-
-
-
-n
 section h2 {
     font-size: 32px;
     margin-top: 40px;
     font-weight: bold;
     color: #2c3e50;
-
+    text-align: left; /* Zorg dat subtitels netjes uitgelijnd zijn */
 }
 
 #media-container {
@@ -144,6 +137,16 @@ section h2 {
 
 /* Responsive layout voor schermen kleiner dan 768px */
 @media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    header {
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     header h1 {
         font-size: 36px;
     }
