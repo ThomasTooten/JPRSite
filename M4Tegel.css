@@ -17,24 +17,31 @@ body {
     margin: 0;
 }
 
+
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Zet elementen onder elkaar */
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+header a {
+    text-decoration: none; /* Verwijdert de onderstreping van de link */
 }
 
 header h1 {
     font-size: 48px;
     color: #3498db;
     text-transform: uppercase;
-    margin: 0; /* Verwijder extra ruimte */
-    text-decoration: none;
-    line-height: 1.2; /* Zorg voor nette tekstuitlijning */
+    margin: 0;
+    line-height: 1; /* Zorgt dat tekst op één lijn blijft */
     text-align: center;
+    display: inline-block; /* Voorkomt rare uitbreidingen door flex */
 }
+
+
 
 header h1:hover {
     text-decoration: underline;
@@ -115,8 +122,8 @@ section h2 {
     text-decoration: none;
     color: #2c3e50;
     text-align: center;
-    width: 150px;
-    flex: 1 1 150px;
+
+
     display: flex;
     flex-direction: column;
     align-items: center;
