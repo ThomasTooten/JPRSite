@@ -20,6 +20,7 @@ body {
 header {
     margin-top: 20px;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 
 header h1 {
@@ -70,6 +71,7 @@ section h2 {
     position: relative;
     display: inline-block;
     padding-bottom: 10px;
+    text-decoration: none;
 }
 
 section h2::after {
