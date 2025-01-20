@@ -27,7 +27,12 @@ header h1 {
     color: #3498db;
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-decoration: none;
 }
+header h1:hover{
+    text-decoration: underline;
+}
+
 
 nav {
     margin-bottom: 40px;
@@ -44,15 +49,7 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
-/* Zorg ervoor dat links standaard niet onderlijnd zijn */
-nav a, .link {
-    text-decoration: none;
-}
 
-/* Maak links onderlijnd bij hover */
-nav a:hover, .link:hover {
-    text-decoration: underline;
-}
 
 main {
     margin-top: 10px;
