@@ -276,6 +276,7 @@ width: 100%; /* Zorg ervoor dat de audioplayer zich uitstrekt over de volledige 
 header h1 {
 font-size: 28px; /* Nog kleiner voor zeer kleine schermen */
 }
+}
 
 nav a {
 margin: 0 5px;
